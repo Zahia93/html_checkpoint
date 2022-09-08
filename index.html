@@ -6,34 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/circles.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
     <title>Portfolio</title>
 </head>
 
 <body>
-    <Header>
-        <!-- Navigation bar-->
-        <a href="#home">Home</a>
-        <a href="#about">About me</a>
-        <a href="#work">Work</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Conact</a>
+    <Header id="top_of_page">
+        <nav>
+            <img class="logo" src="res/circles.png" alt="logo" width="50px">
+            <!-- Navigation bar-->
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Conact</a>
+        </nav>
     </Header>
     <main>
-        <section id="top_of_page">
-            <h1 id="home"> Welcome to my website</h1>
-            <h3> A place where I share with you my learning joureny with web developemet</h3>
-            <img src="res/office.png" alt="illustration of woman in office">
+        <section id="home">
+            <div class="home_section">
+                <h1> Welcome to my website</h1>
+                <h3> A place where I share with you my learning joureny with web developemet</h3>
+            </div>
+            <img class="office" src="res/office.svg" alt="illustration of woman in office">
+
 
         </section>
         <!--start of about me section-->
         <section id="about">
             <h2>About me</h2>
-            <h4> Hello There!</h4>
-            <p>my name is Zahia Hamaz I work as an engineer in the oil and gas industry. currently, I am learning about
-                web developemet <br> My interest to web developemet started when I watched this video:
-            </p>
+            <div class="about_me">
+                <h4> Hello There!</h4>
+                <p>my name is Zahia Hamaz I work as an engineer in the oil and gas industry. currently, I am learning
+                    about
+                    web developemet <br> My interest to web developemet started when I watched this video:
+                </p>
+            </div>
             <!--Adding youtube video about coding-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jA14r2ujQ7s"
+            <iframe width="450" height="315" src="https://www.youtube.com/embed/jA14r2ujQ7s"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -42,56 +53,58 @@
         <!--Start of Work section-->
         <section id="work">
             <H2> Work</H2>
-            <img src="res/coming soon.jpg" , alt="Comming Soon...." width="800" />
+            <img src="res/undraw_under_construction_-46-pa.svg" , alt="Comming Soon...." width="800" />
 
         </section>
-         <!--Start of resume section-->
+        <!--Start of resume section-->
         <section id="resume"></section>
         <h2>Resume</h2>
-        <img src="/res/skills.png" alt="woman coding " />
+        <img class="skills" src="/res/skills.svg" width="500" />
 
-        <h3>Personal information</h3>
-        <table border="1">
-            <tr>
-                <th>first-name</th>
-                <th>Family name</th>
-                <th>Age</th>
-                <th>Nationality</th>
-            </tr>
-            <tr>
-                <td>Zahia</td>
-                <td>Hamaz</td>
-                <td>29 years old</td>
-                <td>Algerian</td>
-            </tr>
-        </table>
+        <div class="info">
+            <h3>Personal information</h3>
+            <table border="1">
+                <tr>
+                    <th>First-name</th>
+                    <th>Family name</th>
+                    <th>Age</th>
+                    <th>Nationality</th>
+                </tr>
+                <tr>
+                    <td>Zahia</td>
+                    <td>Hamaz</td>
+                    <td>29 years old</td>
+                    <td>Algerian</td>
+                </tr>
+            </table>
 
-        <h3>Skills:</h3>
-        <table border="1">
-            <tr>
-                <th> Web fundamentals</th>
-                <th> GIT&Github</th>
-                <th> HTML</th>
-                <th> CSS</th>
-                <th>CSS Layout</th>
-                <th>JavaScript</th>
-                <th>DOM</th>
-            </tr>
-            <tr>
-                <td>Achieved</td>
-                <td>Achieved</td>
-                <td>Achieved</td>
-                <td>Unlocked</td>
-                <td>Locked</td>
-                <td>Locked</td>
-                <td>Locked</td>
-            </tr>
-        </table>
+            <h3>Skills:</h3>
+            <table border="1">
+                <tr>
+                    <th> Web fundamentals</th>
+                    <th> GIT&Github</th>
+                    <th> HTML</th>
+                    <th> CSS</th>
+                    <th>CSS Layout</th>
+                    <th>JavaScript</th>
+                    <th>DOM</th>
+                </tr>
+                <tr>
+                    <td>Achieved</td>
+                    <td>Achieved</td>
+                    <td>Achieved</td>
+                    <td>Unlocked</td>
+                    <td>Locked</td>
+                    <td>Locked</td>
+                    <td>Locked</td>
+                </tr>
+            </table>
+        </div>
         <!--Start of Contact section-->
 
         <section id="contact">
             <h2> Contact us </h2>
-            <img src="res/contact.png" />
+            <img class="contact" src="res/contact_us.svg" width="450" />
             <form>
                 <label> First name: </label>
                 <input type="text" name="first-name"> <br>
@@ -99,24 +112,32 @@
                 <input type="text" name="last-name"> <br>
                 <label> E-mail: </label>
                 <input type="email" name="email" placeholder="example@email.com"> <br>
-                <textarea name="message" cols="20" rows="5"> your message...</textarea> <br>
-                <input type="button" name="Submit" value="submit">
+                <textarea name="message" cols="30" rows="3"> your message...</textarea> <br>
+                <input type="button" class="submit" name="Submit" value="submit">
                 <br>
                 <br>
-                <a href="#top_of_page"> Go to the top page</a>
-                
+
+
 
             </form>
         </section>
+        <a class="top" href="#top_of_page"> Go to the top page</a>
     </main>
+    <hr>
     <footer>
-        <p>E-mail: <a href="mailto:zahia9062@gmail.com"> zahia9062@gmail.com</a></p>
+        <p>E-mail: <a class="mail" href="mailto:zahia9062@gmail.com"> zahia9062@gmail.com</a></p>
         <p> Phone number: +213 675 207 937</p>
-        <p>Social media:</p>
-    
-        <a href="https://www.facebook.com/" target="_blank"> <img src="res/facebook.png" alt="facebook icon" width="32"/> facebook </a> <br>
-        <a href="https://www.linkedin.com/" target="_blank"> <img src="res/linkedin (1).png" alt="linkedin icon" width="32"/> Linkedin</a>
-        
+        <p>Social media: </p>
+        <div>
+
+            <a class="facebook" href="https://www.facebook.com/" target="_blank"> <img src="res/facebook.png"
+                    alt="facebook icon" width="32" /> facebook
+            </a> <br>
+            <a class="linkedin" href="https://www.linkedin.com/" target="_blank"> <img src="res/linkedin (1).png"
+                    alt="linkedin icon" width="32" /> Linkedin
+            </a>
+        </div>
+
     </footer>
 </body>
 
