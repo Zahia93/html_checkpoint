@@ -1,0 +1,151 @@
+body{
+    font-family:"Roboto";
+    /* background-image: url(/res/pattern-background-desktop.svg);
+    background-color:*/
+    
+}
+header{
+    /*background-image: url(/res/pattern-background-desktop.svg);*/
+    /*background-color: palevioletred; */
+    padding: 30px;
+    margin: 0 5px;
+}
+nav {
+    display: inline;
+    margin-top: 25px;
+    padding: 20px;
+    word-spacing: 50px;
+    align-self: center;
+}
+a {
+    text-decoration: none;
+    margin-left: 50px;
+    border: solid 1px pink;
+    color: white;
+    font-weight: bold;
+    background-color:pink;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+main {
+  margin: 10px 20px;
+  width: fit-content;  
+}
+
+div.home_section {
+    display: block;
+    word-spacing: 10px;
+    position: relative; /*diplay the writing on the right side*/
+    left: 450px;
+    top: 50px;   
+}
+h1 {
+    font-size: 60px;
+}
+
+img.office {
+    width: 450px;
+    position: relative; /*display the image on the same level as the writing*/
+    bottom: 150px;
+}
+
+
+/*set Styling for the tile of each section*/
+h2 {
+    font-size: 35px;
+    text-align: center;
+    border: solid 1px rgb(102, 179, 214);
+    border-radius: 15px;
+    padding:0 300px;
+    background-color: rgb(102, 179, 214);
+    color: white;
+    font-weight: bold;
+    width: 400px;
+}
+/*style about me section: display the text on the left and the vidoe on the right at the same level*/
+
+div.about_me {
+    display: block;
+    position: relative;
+    top: 100px;
+    width: 450px; /*set the width of the text and area*/
+    justify-self: center;
+    text-align: justify;
+    font-size: medium;
+}
+h4 {
+    font-size: 20px;
+}
+iframe {
+    position: relative;
+    left: 500px;
+    bottom: 50px;
+}
+section#resume {
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+div.info {
+    position: relative;
+    left: 550px;
+    bottom: 300px
+}
+img.skills {
+    margin-top: 30px;
+}
+
+table {
+    width: fit-content;
+    border-color: rgb(102, 179, 214);
+}
+th,td {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+th {
+    background-color: rgb(102, 179, 214);
+    
+}
+form {
+    position: relative;
+    left: 500px;
+    bottom: 200px;
+}
+label {
+    font-weight: bold;
+}
+input {
+        width: 150px;
+}
+
+a.top{
+    text-decoration: none;
+    margin: 50px;
+    border: solid 1px rgb(102, 179, 214);
+    color: white;
+    font-weight: bold;
+    background-color:rgb(102, 179, 214);
+    padding: 15px 25px;
+    border-radius: 10px;
+}    
+hr{
+    margin: 30px;
+    border: solid 2px black;
+    background-color: white;
+}
+a.mail, a.facebook, a.linkedin{
+    text-decoration: none;
+    margin: 50px;
+    border: solid 1px white;
+    color: black;
+    font-weight: bold;
+    background-color:white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+footer {
+    font-weight: bold;
+    padding-left: 50px;
+}
