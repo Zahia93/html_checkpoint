@@ -16,11 +16,11 @@
         <nav>
             <img class="logo" src="res/circles.png" alt="logo" width="50px">
             <!-- Navigation bar-->
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Conact</a>
+            <a class="nav" href="#home">Home</a>
+            <a class="nav" href="#about">About</a>
+            <a class="nav" href="#work">Work</a>
+            <a class="nav" href="#resume">Resume</a>
+            <a class="nav" href="#contact">Conact</a>
         </nav>
     </Header>
     <main>
@@ -44,7 +44,7 @@
                 </p>
             </div>
             <!--Adding youtube video about coding-->
-            <iframe width="450" height="315" src="https://www.youtube.com/embed/jA14r2ujQ7s"
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/jA14r2ujQ7s"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -77,9 +77,10 @@
                     <td>Algerian</td>
                 </tr>
             </table>
-
-            <h3>Skills:</h3>
-            <table border="1">
+        </div>
+             <h3>Skills:</h3>
+            <table class="skills" border="1">
+                
                 <tr>
                     <th> Web fundamentals</th>
                     <th> GIT&Github</th>
@@ -99,42 +100,37 @@
                     <td>Locked</td>
                 </tr>
             </table>
-        </div>
         <!--Start of Contact section-->
 
         <section id="contact">
             <h2> Contact us </h2>
             <img class="contact" src="res/contact_us.svg" width="450" />
             <form>
-                <label> First name: </label>
-                <input type="text" name="first-name"> <br>
-                <label> Last name: </label>
-                <input type="text" name="last-name"> <br>
-                <label> E-mail: </label>
-                <input type="email" name="email" placeholder="example@email.com"> <br>
+                <label for="first-name"> First name: </label>
+                <input type="text" id="first-name" name="first-name"> 
+                <label for="last-name"> Last name: </label>
+                <input type="text" name="last-name" id =last-name> 
+                <label for="email"> E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="example@email.com"> <br>
                 <textarea name="message" cols="30" rows="3"> your message...</textarea> <br>
-                <input type="button" class="submit" name="Submit" value="submit">
-                <br>
-                <br>
-
-
-
+                <button type="submit" class="submit">submit</button>
+    
             </form>
         </section>
         <a class="top" href="#top_of_page"> Go to the top page</a>
     </main>
     <hr>
     <footer>
-        <p>E-mail: <a class="mail" href="mailto:zahia9062@gmail.com"> zahia9062@gmail.com</a></p>
-        <p> Phone number: +213 675 207 937</p>
-        <p>Social media: </p>
+        <p class="footer">E-mail: <a class="mail" href="mailto:zahia9062@gmail.com"> zahia9062@gmail.com</a></p>
+        <p class="footer"> Phone number: +213 675 207 937</p>
+        <p class="footer">Social media: </p>
         <div>
 
             <a class="facebook" href="https://www.facebook.com/" target="_blank"> <img src="res/facebook.png"
-                    alt="facebook icon" width="32" /> facebook
+                    alt="facebook icon" width="32" />  facebook 
             </a> <br>
             <a class="linkedin" href="https://www.linkedin.com/" target="_blank"> <img src="res/linkedin (1).png"
-                    alt="linkedin icon" width="32" /> Linkedin
+                    alt="linkedin icon" width="32" />  Linkedin
             </a>
         </div>
 
