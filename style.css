@@ -3,13 +3,19 @@ body{
     
 }
 header{
-    padding: 30px;
-    margin: 0 5px;
+    padding: 20px;
+    margin: 0 10px;
+    width: 100%;
+    background-color: white;
+    z-index:1000;
+    position: fixed;
+    top: 0;
+
 }
 nav {
     display: inline;
-    margin-top: 25px;
-    padding: 20px;
+    margin-top: 15px; 
+    padding: 10px;
     word-spacing: 50px;
     align-self: center;
     text-transform: uppercase;
@@ -26,7 +32,21 @@ a.nav {
 }
 main {
   width: fit-content; 
-    margin: 10px 30px; 
+  margin: 100px 30px 30px 30px;
+} 
+ 
+aside {
+    position: fixed;
+    left: 1000px;
+    bottom: 100px;
+    font-style: italic;
+    color: grey;
+    /*background-color: white;*/
+    font-size: 36px;
+    font-weight: bold;
+    width: 250px;
+    bottom: solid 1px pink;
+   /* z-index: 1000;*/
 }
 
 div.home_section {
@@ -34,7 +54,6 @@ div.home_section {
     word-spacing: 10px;
     width: 100%;
     position: relative; /*diplay the writing on the right side*/
-  
     left: 450px;
     top: 50px;   
 }
