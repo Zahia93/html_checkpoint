@@ -7,7 +7,7 @@ header{
     margin: 0 10px;
     width: 100%;
     background-color: white;
-    z-index:1000;
+    z-index:1;
     position: fixed;
     top: 0;
 
@@ -17,7 +17,6 @@ nav {
     margin-top: 15px; 
     padding: 10px;
     word-spacing: 50px;
-    align-self: center;
     text-transform: uppercase;
 }
 a.nav {
@@ -41,12 +40,9 @@ aside {
     bottom: 100px;
     font-style: italic;
     color: grey;
-    /*background-color: white;*/
     font-size: 36px;
     font-weight: bold;
     width: 250px;
-    bottom: solid 1px pink;
-   /* z-index: 1000;*/
 }
 
 div.home_section {
@@ -88,7 +84,6 @@ div.about_me {
     font-size: 30px;
     top: 50px;
     width: 400px; /*set the width of the text and area*/
-    justify-self: center;
     text-align: justify;
     font-size: medium;
 }
